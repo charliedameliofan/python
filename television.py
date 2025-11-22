@@ -32,7 +32,7 @@ class Television:
 	def power(self) -> None:
 		"""Toggle the power status of the TV.
 
-		When called, this method flips the internal power state between on and off.
+		When called, this method flips the power between on and off.
 		"""
 		self.__status = not self.__status
 
@@ -92,7 +92,7 @@ class Television:
 				self.__volume -= 1
 
 	def __str__(self) -> str:
-		"""Return a human-readable representation of the TV state.
+		"""Return text representation of the TV state.
 
 		When muted, the displayed volume is `0` even though the internal
 		`__volume` value is saved.
